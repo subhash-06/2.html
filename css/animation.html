@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            width: 500px;
+            height: 500px;
+            background-color: chocolate;
+            position: relative;
+            /* animation-name: division;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-direction: normal; */
+            /* animation-direction: alternate; (clock and anti)*/
+            /* animation-direction: reverse;(anti clock) */
+            /* animation-direction: alternate-reverse; (anti and clock)*/
+            /* animation-delay: 5s; */
+            animation: division 1s ease-in  infinite alternate ;
+        }
+        @keyframes division {
+            /* from{
+                background-color: burlywood;
+            }
+            to{
+                background-color: crimson;
+            } */
+            0%{
+                background-color: chartreuse;
+                left: 400px;
+                border-radius: 0%;
+            }
+            60%{
+                background-color: darkmagenta;
+                left: 400px;
+                top: 400px;
+                border-radius: 25%;
+            }
+            80%{
+                background-color: yellow;
+                top: 400px;
+                left: 0px;
+                border-radius: 50%;
+            }
+            100%{
+                background-color: darkgreen;
+                left: 0px;
+                right: 0px;
+                border-radius: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+</body>
+</html>

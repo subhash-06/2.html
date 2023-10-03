@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: 10px;
+            animation-name:division;
+            animation-duration: 15s;
+            position: relative;
+        }
+        @keyframes division {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 400px;
+            }
+        }
+        .a{
+            animation-timing-function: ease;
+        }
+        .b{
+            animation-timing-function: ease-in;
+        }
+        .c{
+            animation-timing-function: ease-out;
+        }
+        .d{
+            animation-timing-function: ease-in-out;
+        }
+        .e{
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">Ease</div>
+    <div class="b">Ease-in</div>
+    <div class="c">Ease-out</div>
+    <div class="d">Ease-in-out</div>
+    <div class="e">linear</div>
+</body>
+</html>
