@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: ;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let date=new Date();
+        console.log(date)
+
+        let h=date.getHours();
+        let h1=(h<10)?("0"+h):h
+
+        let m=date.getMinutes();
+        let m1=(m<10)?("0"+m):m
+
+        let s=date.getSeconds();
+        let s1=(s<10)?("0"+s):s;
+
+        
+
+        document.write(`${h1}:${m1}:${s1}<br>`)
+
+        let day=date.getDay()
+        let dayarr=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]  
+
+        let date1=date.getDate();
+
+        let month=date.getMonth();
+        let montharr=["jan","feb","mar","apr","may","june","july","aug","sept","oct","nov","dec"]
+
+        let year=date.getFullYear();
+
+        document.write(`${dayarr[day]} ${date1} ${montharr[month]} ${year}`)
+
+
+
+    </script>
+</body>
+</html>

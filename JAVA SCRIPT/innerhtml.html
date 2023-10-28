@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: block;
+        }
+        input{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <label for="name">NAME</label>
+        <input type="text" id="name">
+    
+    <small id="s"></small>
+    <br>
+    <button onclick="demo()">SUBMIT</button>
+    <script>
+        function demo()
+        {
+            let name1=document.getElementById("name").value
+            let inp=document.getElementById("name")
+            let s1=document.getElementById("s")
+            console.log(s1)
+        
+            if(name1=="")
+            {
+                s1.innerHTML="please dont't leave empty"
+                s1.style.color="red"
+                inp.style.border="2px solid red"
+                s1.style.visibility="visible"
+            }
+            else if(name1.length<3 || name1.length>15)
+                {
+                    s1.innerHTML='invalid name'
+                    s1.style.color='red'
+                    s1.style.visibility="visible"
+                    inp.style.border="2px solid red"
+                }
+            else{
+                inp.style.border=`2px solid green`
+                s1.style.visibility="hidden"
+            }
+        }
+    </script>
+</body>
+</html>

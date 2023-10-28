@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <h1 id="a"></h1>
+    <h1 id="b"></h1>
+    <h1 id="c"></h1>
+    <h1 id="d"></h1>
+    <button onclick="abc()">submit</button>
+
+    <script>
+        function abc()
+        {
+            let num1=document.getElementById("inp1").value
+            let num2=document.getElementById("inp2").value
+
+            let s=Math.sqrt(num1)
+            let b=Math.cbrt(num2)
+            let p=Math.pow(num1,num2)
+            let h=Math.hypot(num1,num2)
+            let i=Math.PI
+            console.log(Math.exp(0))
+            console.log(i)
+            console.log(Math.max(10,20,30,40))
+            console.log(Math.min(10,20,30,40))
+            console.log(i)
+
+            document.getElementById("a").innerHTML=`given number square root is: ${s}`
+            document.getElementById("b").innerHTML=`given number cube root is: ${b}`
+            document.getElementById("c").innerHTML=`given number square root is: ${p}`
+            document.getElementById("d").innerHTML=`given number square root is: ${h}`
+
+        }
+    </script>
+</body>
+</html>-

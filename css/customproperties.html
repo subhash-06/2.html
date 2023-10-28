@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root 
+        {
+            --a:aqua;
+            --b:blue;
+            --c:red;
+            --d:200px;
+            --e:80px;
+            --f:left;
+        }
+        body{
+            background-color: var(--a);
+        }
+        .div1{
+            width: var(--d);
+            height: var(--d);
+            background-color: var(--b);
+            float: var(--f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div2{
+            width: var(--d);
+            height: var(--d);
+            background-color: var(--c);
+            float: var(--f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div3{
+            width: var(--e);
+            height: var(--e);
+            background-color: var(--c);
+        }
+        .div4{
+            width: var(--e);
+            height: var(--e);
+            background-color: var(--b);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div3">
+            <h1>hai</h1>
+    </div>
+    </div>
+    <div class="div2">
+        <div class="div4">
+            <h1>hii</h1>
+        </div>
+    </div>
+</body>
+</html>

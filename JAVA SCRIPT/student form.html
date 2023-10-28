@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #square{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            border-radius: 30px ;
+            border: 3px dotted red;
+            margin: 150;
+        }
+        #circle{
+            width: 450px;
+            height: 450px;
+            background-color: rgb(53, 219, 53); 
+            border-radius: 50% ;
+            position: relative;
+            top: 75px;
+            left: -100px;
+            
+        }
+        #container{
+            width: 180px;
+            position: relative;
+            top: 100px;6
+            
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <center>
+    <div id="square">
+        <div id="circle" >
+           <div id="container">
+            <label for="name">Name</label><br>
+            <input type="text" id="name"><br>
+            <small id="s"></small><br>
+            <label for="phone">Phone No.</label><br>
+            <input type="number" id="phone"><br>
+            <label for="P">Password</label><br>
+            <input type="password" id="P"><br>
+            <label for="CP">Confirm Password</label><br>
+            <input type="password" id="CP"><br><br>
+           <center> <button onclick="demo()">Submit</button></center>
+           </div>
+        </div>
+    </div>
+</center>
+    <script>
+         function demo()
+        {
+            let name1= document.getElementById("name").value
+            let inp= document.getElementById("name")
+            let s1= document.getElementById("s")
+            console.log(s1)
+             if(name1=="")
+             {
+                s1.innerHTML=`Please Enter Name`
+                s1.style.color="red"
+                inp.style.border="2px solid red"
+                s1.style.visibility="visible"
+             }
+             else if(name1.length<3 || name1.length>15)
+                {
+                    s1.innerHTML=`Invalid Name`
+                    s1.style.color="red"
+                    s1.style,visibility="visible"
+                    inp.style.border="2px solid red"
+                }
+            else{
+                inp.style.border=`2px solid green`
+                s1.style.visibility="hidden"
+            }
+
+        }
+
+    </script>
+</body>
+</html>
